@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Botão em estágio inicial */
+button {
+    box-sizing: border-box;
+    border: none;
+    width: 300px;
+    height: 50px;
+    background-color: #25864E;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.7s;
+    animation-duration: 10s;
+    animation-name: slide;
+}
+button:hover {
+    border: 5px dotted rgb(35, 202, 224); /* 5px para grossura da borda, dotted(pontilhado) muda o estilo da borda */
+    
+}
+input:focus {
+    color:blue;
+    background-color: pink;
+}
+
+@keyframes slide { 
+    from {
+        margin-left: 100%;
+       
+    }
+
+    to{
+        margin-left:0;
+        margin-top: 500px;
+    }
+    
+}
